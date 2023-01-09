@@ -12,10 +12,8 @@ public class ListDemo {
 		list.add("Banglore");
 		list.add("Delhi");
 		//System.out.println(list);
-		Iterator<String> itr = list.iterator();
-		while(itr.hasNext()) {
-			System.out.println(itr.next());
+		list.stream().forEach(x-> System.out.println(x));
 		}
 	}
 
-}
+
