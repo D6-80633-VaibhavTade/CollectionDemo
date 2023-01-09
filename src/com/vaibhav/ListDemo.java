@@ -1,6 +1,7 @@
 package com.vaibhav;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ListDemo {
@@ -11,8 +12,9 @@ public class ListDemo {
 		list.add("Banglore");
 		list.add("Delhi");
 		//System.out.println(list);
-		for(String str : list) {
-			System.out.println(str);
+		Iterator<String> itr = list.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
 		}
 	}
 
